@@ -1,0 +1,25 @@
+name: 'upload obs'
+description: 'An action to upload file to huawei obs storage'
+author: 'z-houbin'
+inputs:
+  path:
+    description: 'The files to compress into zip file, supported pattern, see glob'
+    required: true
+  endpoint:
+    description: 'The endpoint of obs'
+    required: true
+  region:
+    description: 'The region of obs'
+    required: true
+  ak:
+    description: 'The access key of obs'
+    required: true
+  sk:
+    description: 'The secret key of obs'
+    required: true
+  bucket:
+    description: 'The bucket name of obs, created if not existing'
+    required: true
+runs:
+  using: 'node12'
+  main: 'src/main.js'

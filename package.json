@@ -1,0 +1,24 @@
+{
+  "name": "dz-packer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "src": "src",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/exec": "^1.1.0",
+    "adm-zip": "^0.5.9",
+    "esdk-obs-nodejs": "^3.21.6",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.2.0"
+  }
+}
