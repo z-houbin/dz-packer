@@ -60,7 +60,7 @@ async function main() {
     // 上传obs
     let server = core.getInput('endpoint')
     let region = core.getInput('region')
-    let signature = core.getInput('signature')
+    let signature = core.getInput('signature') || 'obs'
     let ak = core.getInput('ak')
     let sk = core.getInput('sk')
     let bucketName = core.getInput('bucket') || 'github-actions-upload-hk';
